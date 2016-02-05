@@ -45,7 +45,7 @@ public class Main extends ActionBarActivity {
 
                 cu.execute(param);
             }});
-
+ 
     }
 
     private class NetConnectionCallback implements ConnectionUtil.ConnectionCallback {
