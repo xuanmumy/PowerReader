@@ -39,13 +39,13 @@ public class Main extends ActionBarActivity {
 
                 String num = et.getText().toString();
                 param.add(num);
-
+                Log.v(TAG, "onCreate.");
                 ConnectionUtil cu = new ConnectionUtil(getApplicationContext());
                 cu.addCallback(new NetConnectionCallback());
 
                 cu.execute(param);
             }});
- 
+
     }
 
     private class NetConnectionCallback implements ConnectionUtil.ConnectionCallback {
